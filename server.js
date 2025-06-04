@@ -6,6 +6,8 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 let latestData = {}; // Store the latest ESP8266 data
+let lastReceivedTime = Date.now();
+const TIMEOUT_MS = 3000;
 
 app.use(bodyParser.json());
 
@@ -28,3 +30,9 @@ app.get("/data", (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
+
+setInterval(() => {
+  if (Date.now() - lastReceivedTime > TIMEOUT_MS) {
+    latestData = {}; // Або latestData.pressure = undefined;
+  }
+}, 1000);
