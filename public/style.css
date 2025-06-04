@@ -1,0 +1,84 @@
+body {
+  font-family: "Inter", sans-serif;
+  background: #f0ead2;
+  display: flex;
+  justify-content: center;
+}
+
+.sensor-container {
+  background: linear-gradient(145deg, #606c38, #283618);
+  border-radius: 3rem;
+  padding: 5%;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.title {
+  color: white;
+  margin: 0%;
+  font-size: xx-large;
+}
+
+.text {
+  font-weight: 200;
+  color: white;
+  margin-top: 8%;
+}
+
+.input-group {
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+  margin-left: 4%;
+}
+
+.input-group label {
+  display: flex;
+  font-size: 14px;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+
+  font-weight: 100;
+  color: white;
+}
+
+input {
+  font-family: "Inter", sans-serif;
+  width: 37%;
+  border-radius: 5px;
+  border: none;
+  text-align: end;
+  font-weight: 200;
+  font-size: medium;
+  background-color: #d9d9d9;
+}
+
+.pressure-display {
+  background: #cecece;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 15%;
+}
+
+.label {
+  font-weight: 500;
+  color: black;
+}
+
+#pressure {
+  background-color: #d9d9d9;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: 300;
+  color: black;
+  border: 1.5px solid #2c2c2c;
+  width: 20%;
+  text-align: center;
+}
