@@ -25,6 +25,7 @@ function updatePressureDisplay(pressure) {
       : (pressureElement.style.backgroundColor = "#d9d9d9");
   } else {
     pressureElement.textContent = "--";
+    pressureElement.style.backgroundColor = "#d9d9d9";
   }
 }
 
