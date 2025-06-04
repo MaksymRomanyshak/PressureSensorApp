@@ -45,7 +45,7 @@ void loop() {
   if (WiFi.status() == WL_CONNECTED) {
     HTTPClient http;
     WiFiClientSecure client;
-    client.setInsecure();  // тимчасово, інакше не пройде сертифікат
+    client.setInsecure();
     http.begin(client, serverAddress);
     http.addHeader("Content-Type", "application/json");
 
