@@ -1,6 +1,6 @@
 # Bicycle Tire Pressure Monitor
 
-This project allows real-time monitoring of bicycle tire pressure using an NodeMCU (ESP8266) and a web interface.
+This project allows real-time monitoring of bicycle tire pressure using an NodeMCU (ESP8266), MPX5700AP pressure sensor and a web interface.
 
 ## ⚙️ Technologies
 
