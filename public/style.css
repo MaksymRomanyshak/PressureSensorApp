@@ -8,17 +8,26 @@ body {
 .sensor-container {
   background: linear-gradient(145deg, #606c38, #283618);
   border-radius: 3rem;
-  padding: 5%;
+  padding: 7%;
   width: auto;
   display: flex;
   flex-direction: column;
   margin-top: 10%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
 }
+/* For larger screens (PCs) */
+@media (min-width: 768px) {
+  .sensor-container {
+    padding: 2%;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 .title {
   color: white;
-  margin: 0%;
+  margin: 0;
   font-size: xx-large;
 }
 
@@ -64,7 +73,7 @@ input {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 15%;
+  margin-top: 10%;
 }
 
 .label {
