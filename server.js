@@ -17,6 +17,7 @@ app.use(express.static(path.join(__dirname, "public")));
 // Endpoint to receive ESP8266 data
 app.post("/data", (req, res) => {
   latestData = req.body; // Store latest data
+  lastReceivedTime = Date.now();
   console.log("Received data:", latestData);
   res.json({ message: "Data received successfully" });
 });
