@@ -24,7 +24,7 @@ function updatePressureDisplay(pressure) {
       ? (pressureElement.style.backgroundColor = "#C7923E")
       : (pressureElement.style.backgroundColor = "#d9d9d9");
   } else {
-    pressureElement.textContent = "--";
+    pressureElement.textContent = "Offline";
     pressureElement.style.backgroundColor = "#d9d9d9";
   }
 }
