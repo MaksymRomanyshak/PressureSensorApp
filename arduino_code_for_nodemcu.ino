@@ -6,7 +6,7 @@
 
 const char* ssid = "SSID";       // Replace with your Wi-Fi name
 const char* password = "PASSWORD"; // Replace with your Wi-Fi password
-const char* serverAddress = "https://pressure-sensor-app.up.railway.app/data"; // your local ip "http://your-local-ip:3000/data" or deployed URL
+const char* serverAddress = "https://pressure-sensor.up.railway.app/data"; // your local ip "http://your-local-ip:3000/data" or deployed URL
 
 const int sensorPin = A0; // Input pin for the sensor
 const float VCC = 3.3;    // NodeMCU ADC reference voltage
